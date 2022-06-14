@@ -1,0 +1,76 @@
+{
+  "name": "Youtube Upload Bot",
+  "description": "Telegram to YouTube Uploader Bot",
+  "keywords": ["telegram", "youtube", "uploader"],
+  "env": {
+      "BOT_TOKEN": {
+      "description": "Your Bot token. Get from https://t.me/botfather",
+      "value": ""
+    },
+    "SESSION_NAME": {
+      "description": "Your Bot's username.",
+      "value": "youtubeitbot",
+      "required":false
+    },
+    "API_ID": {
+      "description": "Your API_ID.  Refer project docs.",
+      "value": "15537858"
+    },
+    "API_HASH": {
+      "description": "Your API_ID. Refer project docs.",
+      "value": "d6b01a48037f638ad95d427ba349b2c4"
+    },
+    "CLIENT_ID": {
+      "description": "Your Google CLIENT_ID. Refer project docs.",
+      "value": "913610702261-7n5o931qg0288tg3uakt275s4hhcmenq.apps.googleusercontent.com"
+    },
+    "CLIENT_SECRET": {
+      "description": "Your Google CLIENT_SECRET. Refer project docs.",
+      "value": "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"
+    },
+    "BOT_OWNER": {
+      "description": "Telegram id of the bot owner.",
+      "value": "5018423735"
+    },
+    "AUTH_USERS": {
+      "description": "Telegram id of authorised users, separated by comma",
+      "value": "",
+      "required":false
+    },
+    "VIDEO_DESCRIPTION": {
+      "description": "Any default description to be aded to the video.",
+      "value": "Uploaded By http://t.me/upload_toutubebot",
+      "required":false
+    },
+    "VIDEO_CATEGORY": {
+      "description": "YouTube's video category id.",
+      "value": "",
+      "required":false
+    },
+    "VIDEO_TITLE_PREFIX": {
+      "description": "Any prefix to be added to the video's title.",
+      "value": "",
+      "required":false
+    },
+    "VIDEO_TITLE_SUFFIX": {
+      "description": "Any suffix to be added to the video's title.",
+      "value": "",
+      "required":false
+    },
+    "UPLOAD_MODE": {
+      "description": "The video's privacy status. Valid values for this property are: private, public, unlisted",
+      "value": "public",
+      "required":false
+    },
+    "DEBUG": {
+      "description": "Pass any value to set logging to debug level.",
+      "value": "",
+      "required":false
+    }
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
